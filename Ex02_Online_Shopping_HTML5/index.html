@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html><head><title>Shopping HTML5</title></head>
+<body style="font-family:sans-serif;padding:30px;"><div style="max-width:500px;background:white;padding:30px;margin:auto;border-radius:10px;">
+<h2>🛍️ Advanced HTML5 Shopping</h2>
+<form>
+<label>Email:</label><br><input type="email" required style="width:100%;padding:8px;margin:10px 0;"><br>
+<label>Delivery Hub (Datalist):</label><br><input list="hubs" style="width:100%;padding:8px;margin:10px 0;">
+<datalist id="hubs"><option value="Chennai Hub"><option value="Madurai Hub"></datalist><br>
+<label>Quantity (Range):</label><br><input type="range" min="1" max="10" value="1" oninput="this.nextElementSibling.value=this.value"><output>1</output><br><br>
+<button type="submit" style="background:#ff6f61;color:white;border:none;padding:10px;width:100%;border-radius:5px;">Checkout</button>
+</form></div></body></html>

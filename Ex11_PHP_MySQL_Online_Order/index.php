@@ -1,0 +1,1 @@
+<?php $conn = new mysqli("localhost","root","","labdb"); echo "PHP MySQL Connected!"; ?>

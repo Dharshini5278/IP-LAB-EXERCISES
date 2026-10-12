@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html><head><title>JS Validation</title></head>
+<body style="font-family:sans-serif;background:#eef2f7;padding:30px;"><div style="max-width:400px;background:white;padding:30px;margin:auto;border-radius:10px;">
+<h2>📝 Job Portal Registration</h2>
+<form onsubmit="return val()">
+<label>Name (Min 3 chars):</label><br><input type="text" id="name" required style="width:100%;padding:8px;margin:5px 0;"><br>
+<label>Email:</label><br><input type="email" id="email" required style="width:100%;padding:8px;margin:5px 0;"><br>
+<label>Phone (10 digits):</label><br><input type="text" id="phone" maxlength="10" required style="width:100%;padding:8px;margin:5px 0;"><br>
+<button type="submit" style="background:#3b82f6;color:white;border:none;padding:10px;width:100%;border-radius:5px;cursor:pointer;margin-top:10px;">Register</button>
+</form></div>
+<script>function val(){let n=document.getElementById('name').value;let p=document.getElementById('phone').value;if(n.length<3){alert('Name too short');return false;}if(!/^[0-9]{10}$/.test(p)){alert('Phone must be 10 digits');return false;}alert('Validation Passed Successfully!');return true;}<\/script></body></html>
